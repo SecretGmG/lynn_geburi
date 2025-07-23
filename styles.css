@@ -1,0 +1,147 @@
+html, body {
+height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    background-color: whitesmoke;
+}
+
+header {
+    margin: 0;
+    padding: 0;
+    min-height: 100px;
+    background-color: rgb(146, 55, 55);
+    color: whitesmoke;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+#lottery {
+    width: 500px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    background-color: whitesmoke
+}
+
+header {
+    margin: 0;
+    padding: 0;
+    min-height: 100px;
+    background-color: rgb(146, 55, 55);
+    color: whitesmoke;
+    width: 100%;
+}
+#lottery{
+    width: 800px;
+    margin: 0, auto;
+    align-items: center;
+}
+input[type=number] {
+    font-size: 2.5rem;
+    padding: 0.5rem;
+    /* optional for nicer look */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Remove arrows in WebKit browsers */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Remove arrows in Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    height: 400px;
+    flex: 1;
+    align-items: center;
+}
+footer {
+    min-height: 40px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(27, 7, 7);
+    color: whitesmoke;
+}
+input[type="submit"],
+button[type="submit"] {
+    background-color: rgb(146, 55, 55);
+    color: whitesmoke;
+    font-size: 1.25rem;
+    padding: 0.75rem 1.5rem;
+    margin-top: 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+input[type="submit"]:hover,
+button[type="submit"]:hover {
+    background-color: rgb(110, 40, 40);
+}
+
+input[type="submit"]:active,
+button[type="submit"]:active {
+    transform: scale(0.98);
+    background-color: rgb(90, 30, 30);
+}
