@@ -42,8 +42,8 @@ main {
 }
 
 #lottery {
-    display: flex
-    width: 600px;
+    display: flex;
+    flex-direction: column;
     margin: 0 auto;
 }
 
