@@ -42,6 +42,7 @@ main {
 }
 
 #lottery {
+    display: flex
     width: 600px;
     margin: 0 auto;
 }
@@ -79,7 +80,6 @@ input[type=number]::-webkit-outer-spin-button {
 /* Remove arrows in Firefox */
 input[type=number] {
     -moz-appearance: textfield;
-    appearance: textfield;
 }
 
 /* Submit Button */
