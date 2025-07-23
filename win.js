@@ -1,16 +1,17 @@
-const canvas = document.getElementById('confetti-canvas');
-canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
-
-const confetti = window.confetti.create(canvas, { resize: true });
-
-confetti({
+function shootConfettiFromSide(side) {
+  confetti({
     particleCount: 100,
-    spread: 70,
-    origin: { x: 0 },
-});
-confetti({
-    particleCount: 100,
-    spread: 70,
-    origin: { x: 1 },
-});
+    angle: side === 'left' ? 60 : 120,  // angles pointing inward from sides
+    spread: 60,
+    origin: { x: side === 'left' ? 0 : 1, y: 0.5 }, // left: x=0, right: x=1, vertically centered
+    gravity: 0.5,
+    ticks: 200,
+    scalar: 1.2,
+  });
+}
+
+window.onload = () => {
+  // Launch confetti from left and right simultaneously
+  shootConfettiFromSide('left');
+  shootConfettiFromSide('right');
+};

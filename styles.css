@@ -1,27 +1,24 @@
+/* Reset & Global */
 html, body {
-height: 100%;
+    height: 100%;
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: whitesmoke;
+    text-align: center;
 }
 
 *, *::before, *::after {
     box-sizing: border-box;
 }
 
-body {
-    text-align: center;
-    background-color: whitesmoke;
-}
-
+/* Header */
 header {
-    margin: 0;
-    padding: 0;
     min-height: 100px;
     background-color: rgb(146, 55, 55);
     color: whitesmoke;
-    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -30,63 +27,49 @@ header {
 header h1 {
     margin: 0;
     padding: 0;
+    font-size: 2.5rem;
+    font-weight: 600;
 }
 
+/* Main Section */
 main {
     flex: 1;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    height: 400px;
 }
 
 #lottery {
-    width: 500px;
+    width: 600px;
     margin: 0 auto;
-    align-items: center;
 }
 
+#lottery h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+/* Form Styling */
 form {
     display: flex;
     flex-direction: column;
-}
-html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-}
-
-*, *::before, *::after {
-    box-sizing: border-box;
-}
-
-body {
-    text-align: center;
-    background-color: whitesmoke
-}
-
-header {
-    margin: 0;
-    padding: 0;
-    min-height: 100px;
-    background-color: rgb(146, 55, 55);
-    color: whitesmoke;
-    width: 100%;
-}
-#lottery{
-    width: 800px;
-    margin: 0, auto;
     align-items: center;
-}
-input[type=number] {
-    font-size: 2.5rem;
-    padding: 0.5rem;
-    /* optional for nicer look */
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    gap: 1rem;
 }
 
-/* Remove arrows in WebKit browsers */
+input[type=number] {
+    font-size: 2rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    width: 200px;
+    text-align: center;
+}
+
+/* Remove arrows in WebKit */
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
     -webkit-appearance: none;
@@ -96,52 +79,31 @@ input[type=number]::-webkit-outer-spin-button {
 /* Remove arrows in Firefox */
 input[type=number] {
     -moz-appearance: textfield;
+    appearance: textfield;
 }
 
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-header h1 {
-    margin: 0;
-    padding: 0;
-}
-
-main {
-    height: 400px;
-    flex: 1;
-    align-items: center;
-}
-footer {
-    min-height: 40px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    background-color: rgb(27, 7, 7);
-    color: whitesmoke;
-}
-input[type="submit"],
-button[type="submit"] {
-    background-color: rgb(146, 55, 55);
-    color: whitesmoke;
-    font-size: 1.25rem;
-    padding: 0.75rem 1.5rem;
-    margin-top: 1rem;
+/* Submit Button */
+input[type=submit] {
+    font-size: 1.5rem;
+    padding: 0.5rem 2rem;
     border: none;
+    background-color: rgb(146, 55, 55);
+    color: white;
     border-radius: 6px;
     cursor: pointer;
-    transition: background-color 0.2s ease, transform 0.1s ease;
+    transition: background-color 0.2s ease-in-out;
 }
 
-input[type="submit"]:hover,
-button[type="submit"]:hover {
-    background-color: rgb(110, 40, 40);
+input[type=submit]:hover {
+    background-color: rgb(170, 70, 70);
 }
 
-input[type="submit"]:active,
-button[type="submit"]:active {
-    transform: scale(0.98);
-    background-color: rgb(90, 30, 30);
+/* Footer */
+footer {
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+    color: #555;
 }
