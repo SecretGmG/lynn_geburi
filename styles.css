@@ -113,3 +113,6 @@ footer {
     font-size: 0.9rem;
     color: #555;
 }
+footer p a {
+    color: #666;
+}
